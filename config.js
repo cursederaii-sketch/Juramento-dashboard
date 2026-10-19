@@ -8,6 +8,10 @@ var PAGOS={
 };
 // A dónde va el jugador después de pagar (enlace del juego o del APK).
 var JUEGO_URL="";
+// Descargas que se muestran en gracias.html (pago con PayPal).
+// Sube el .exe y el .apk a un Release de GitHub y pega aquí los enlaces.
+var JUEGO_WINDOWS=""; // Juramento_1_0_0.exe (107 MB: no cabe en el repositorio, usa Releases)
+var JUEGO_ANDROID=""; // Juramento_v8_39_1792376095509.apk
 
 // Pago con alias de Mercado Pago (si no tienes link de pago).
 // Si pones aquí tu alias, la web muestra las instrucciones para transferir.

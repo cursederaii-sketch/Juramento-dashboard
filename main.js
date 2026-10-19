@@ -18,6 +18,10 @@ if(ctc(pc))document.getElementById("p-ayuda").hidden=false;
 var s=document.createElement("script"),er=function(){bx.textContent="No se pudo cargar PayPal. Recarga la página."};
 s.src="https://www.paypal.com/sdk/js?client-id="+encodeURIComponent(PAYPAL.clientId)+"&components=hosted-buttons&disable-funding=venmo&currency=USD";
 s.onload=function(){try{paypal.HostedButtons({hostedButtonId:PAYPAL.botonId}).render("#paypal-boton")}catch(e){er()}};s.onerror=er;document.head.appendChild(s)}
+var ars=document.getElementById("precio-ars"),u0=(typeof MP!=="undefined"&&MP.usd)||1.21;
+fetch("https://dolarapi.com/v1/dolares/"+((typeof MP!=="undefined"&&MP.cotizacion)||"oficial")).then(function(r){return r.json()}).then(function(d){
+if(!d||!d.venta)throw 0;ars.textContent="≈ $"+(Math.ceil(u0*d.venta/10)*10).toLocaleString("es-AR")+" pesos al cambio de hoy";ars.hidden=false}).catch(function(){});
+["c-contacto","faq-contacto","f-contacto"].forEach(function(id){var e=document.getElementById(id);if(e)ctc(e,"quien te vendió el acceso")});
 if(MP.alias){var t=document.getElementById("transferencia");t.hidden=false;
 document.getElementById("t-alias").textContent=MP.alias;var usd=MP.usd||1.21,tm=document.getElementById("t-monto"),ust="US$"+usd.toFixed(2).replace(".",",");
 var fb=function(){tm.textContent=MP.montoRespaldo?"$"+MP.montoRespaldo+" ("+ust+" al cambio de hoy)":"el equivalente a "+ust+" en pesos, al cambio de hoy"};

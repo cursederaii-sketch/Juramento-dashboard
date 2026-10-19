@@ -2,25 +2,45 @@
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>El último Juramento · Soulslike 2D · Acceso anticipado</title>
-<meta name="description" content="Soulslike 2D con combate de habilidad, juramentos, jefes con fases y cooperativo online. Acceso anticipado por $1,21.">
+<meta name="description" content="Soulslike 2D con combate de habilidad, juramentos, jefes con fases y cooperativo online. Acceso anticipado por US$1,21.">
+<meta name="google-site-verification" content="QD4kJTyY43dm9GobsHGS8PEi5zYD2W1JOPuvbMv6r8Y">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <meta property="og:title" content="El último Juramento · Soulslike 2D">
-<meta property="og:description" content="Combate de habilidad, juramentos, jefes con fases y cooperativo online. Acceso anticipado por $1,21.">
+<meta property="og:description" content="Combate de habilidad, juramentos, jefes con fases y cooperativo online. Acceso anticipado por US$1,21.">
+<link rel="canonical" href="https://juramento-dashboard.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="El último Juramento">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://juramento-dashboard.pages.dev/">
+<meta property="og:image" content="https://juramento-dashboard.pages.dev/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="El último Juramento: un castillo junto a un lago al atardecer, en pixel art">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="El último Juramento · Soulslike 2D">
+<meta name="twitter:description" content="Combate de habilidad, juramentos, jefes con fases y cooperativo online. Acceso anticipado.">
+<meta name="twitter:image" content="https://juramento-dashboard.pages.dev/assets/og.jpg">
+<meta name="theme-color" content="#140d2b">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap">
-<meta name="google-site-verification" content="QD4kJTyY43dm9GobsHGS8PEi5zYD2W1JOPuvbMv6r8Y" />
 </head>
 <body>
 <header class="hero">
 <canvas id="brasas" aria-hidden="true"></canvas>
-<nav class="nav" aria-label="Secciones"><a href="#juramentos">Juramentos</a><a href="#combate">Combate</a><a href="#jefes">Jefes</a><a href="#reino">El reino</a><a href="#coop">Cooperativo</a><a href="#acceso">Acceso anticipado</a></nav>
+<nav class="nav" aria-label="Secciones"><a href="#trailer">Tráiler</a><a href="#juramentos">Juramentos</a><a href="#combate">Combate</a><a href="#jefes">Jefes</a><a href="#reino">El reino</a><a href="#coop">Cooperativo</a><a href="#acceso">Acceso anticipado</a></nav>
 <div class="hero-in">
 <small class="px">Un soulslike en 2D</small>
 <h1 class="px">El último<br>Juramento</h1>
 <p>Un reino que se cae a pedazos, un caballero que no sabe morir y una promesa que tendrás que cumplir. Para jugar solo o con amigos.</p>
-<a class="btn px" href="#pagar">Conseguir acceso</a><a class="btn sec px" href="#combate">Ver cómo se juega</a>
-<p class="px precio">Acceso anticipado · $1,21</p>
+<a class="btn px" href="#pagar">Conseguir acceso</a><a class="btn sec px" href="#trailer">Ver el tráiler</a>
+<p class="px precio">Acceso anticipado · US$1,21</p>
 </div></header>
+
+<section class="trailer" id="trailer"><div class="w">
+<h2 class="px">Mira el tráiler</h2>
+<figure><video class="shot" controls playsinline preload="none" poster="assets/trailer-poster.webp" aria-label="Tráiler de El último Juramento"><source src="assets/trailer.mp4" type="video/mp4">Tu navegador no puede reproducir el vídeo. <a href="assets/trailer.mp4">Descárgalo aquí</a>.</video>
+<figcaption>Un minuto de hogueras, jefes y juramentos.</figcaption></figure>
+</div></section>
 
 <section class="band" id="juramentos"><div class="w dos">
 <div><h2 class="px">Antes de pelear, juras</h2>
@@ -78,14 +98,33 @@
 <section class="acceso" id="acceso"><div class="w dos">
 <figure><img class="shot" src="assets/titulo-animado.webp" alt="Pantalla de título de El último Juramento, con un castillo junto a un lago al atardecer" loading="lazy"></figure>
 <div><h2 class="px">Acceso anticipado</h2>
-<p class="cifra px">$1,21</p>
+<p class="cifra px">US$1,21</p>
+<p class="ars" id="precio-ars" hidden></p>
 <p>Entras antes de la versión final. El juego ya se puede jugar de principio a fin y sigo puliéndolo, así que habrá cambios y algún error por el camino.</p>
 <ul><li>El juego tal como está hoy: el reino, los jefes, los juramentos y los finales.</li><li>Cooperativo online de hasta cuatro jugadores.</li><li>Las novedades que lleguen durante el acceso anticipado.</li></ul>
 <a class="btn px" href="#pagar">Conseguir acceso</a></div>
 </div></section>
 
+<section class="recibes" id="recibes"><div class="w">
+<h2 class="px">Qué recibes y cómo se instala</h2>
+<p class="lead">Después de pagar recibes dos descargas: una para Windows y otra para Android. Usa la que necesites.</p>
+<div class="plataformas">
+<div class="plat"><h3 class="px">Windows</h3>
+<p class="muted">Instalador .exe · unos 107 MB</p>
+<ol><li>Descarga el instalador y ábrelo con doble clic.</li>
+<li>Si Windows muestra “Windows protegió tu PC”, pulsa <b>Más información</b> y luego <b>Ejecutar de todas formas</b>.</li>
+<li>Sigue los pasos del instalador y abre el juego desde el acceso directo.</li></ol>
+<p class="muted">El aviso aparece porque el instalador no tiene firma digital. Instala solo el archivo que descargues desde aquí.</p></div>
+<div class="plat"><h3 class="px">Android</h3>
+<p class="muted">Archivo .apk · unos 21 MB · Android 7.0 o superior</p>
+<ol><li>Descarga el archivo .apk en tu móvil.</li>
+<li>Ábrelo. Android te pedirá permitir instalar apps desde esa fuente (tu navegador o gestor de archivos). Acepta solo para esta instalación.</li>
+<li>Pulsa Instalar y abre el juego. Si usas el chat de voz, te pedirá permiso de micrófono.</li></ol>
+<p class="muted">El juego no está en Google Play, por eso se instala así.</p></div>
+</div></div></section>
+
 <section class="pagar" id="pagar"><div class="w"><h2 class="px">Consigue tu acceso</h2>
-<p class="lead">$1,21 y entras a jugar. Elige cómo pagar: el pago se hace en la página segura de cada servicio, no aquí, así que tus datos de tarjeta nunca pasan por esta web.</p>
+<p class="lead">US$1,21 y entras a jugar. Elige cómo pagar: el pago se hace en la página segura de cada servicio, no aquí, así que tus datos de tarjeta nunca pasan por esta web.</p>
 <div class="metodos">
 <a class="metodo" data-m="tarjeta"><b class="px">Tarjeta</b><span>Crédito o débito</span></a>
 <a class="metodo" data-m="paypal"><b class="px">PayPal</b><span>Con tu cuenta o tarjeta</span></a>
@@ -101,17 +140,27 @@
 <li>Envía al alias <code id="t-alias"></code> <button class="copiar px" id="t-copiar" type="button">Copiar</button><br><span class="muted">Si la app te deja agregar un mensaje, escribe tu correo o tu usuario.</span></li>
 <li>Monto: <b id="t-monto">calculando…</b>. Puedes poner más si quieres apoyar el juego.</li>
 <li>Manda el comprobante a <span id="t-contacto"></span> y, cuando lo verifique, te mando el archivo del juego.</li></ol></div>
-<p class="muted">Al terminar el pago te mostramos cómo entrar al juego.</p></div></section>
+<p class="muted">Con PayPal, al terminar el pago verás los botones de descarga para Windows y Android. Con transferencia de Mercado Pago, te mando el enlace cuando verifique el pago.</p>
+<div class="confianza"><h3 class="px">Compra tranquila</h3>
+<ul><li><b>Tus datos están a salvo.</b> Pagas en la página de PayPal o Mercado Pago; aquí nunca se ve tu tarjeta.</li>
+<li><b>Si no te funciona, te devuelvo el dinero.</b> Si el juego no corre en tu dispositivo y no logro arreglarlo, escríbeme y te reembolso.</li>
+<li><b>Hay una persona detrás.</b> Si tienes un problema, me escribes a <span id="c-contacto"></span> y te respondo yo.</li></ul></div>
+</div></section>
 
 <section class="faq"><div class="w"><h2 class="px">Preguntas rápidas</h2>
 <details><summary>¿Qué significa acceso anticipado?</summary><p>Que juegas mientras el juego sigue en desarrollo. Puede haber errores y cambios entre versiones, y a cambio entras desde ya y ves cómo evoluciona.</p></details>
 <details><summary>¿Dónde puedo jugarlo?</summary><p>En el móvil con controles táctiles (en horizontal), en el PC con teclado y en cualquier dispositivo con un mando.</p></details>
 <details><summary>¿Puedo jugar con amigos?</summary><p>Sí. El cooperativo online admite hasta cuatro jugadores, con chat de texto y de voz.</p></details>
 <details><summary>¿Se pierde mi progreso?</summary><p>La partida se guarda sola en tu dispositivo. Si cambias de aparato, empiezas de cero.</p></details>
+<details><summary>Windows dice que no reconoce la aplicación. ¿Qué hago?</summary><p>Es el aviso normal para instaladores sin firma digital. Pulsa “Más información” y luego “Ejecutar de todas formas”. Si prefieres no hacerlo, escríbeme y lo hablamos.</p></details>
+<details><summary>¿Por qué no está en Google Play?</summary><p>Todavía está en acceso anticipado y lo reparto yo directamente. Se instala con el archivo .apk, igual que otras apps fuera de la tienda.</p></details>
+<details><summary>¿Y si el juego no me funciona?</summary><p>Escríbeme con tu modelo de dispositivo y te ayudo a hacerlo andar. Si no se logra, te devuelvo el pago.</p></details>
+<details><summary>¿Es seguro pagar?</summary><p>Sí. El pago se hace en PayPal o Mercado Pago, no en esta web, así que yo nunca veo los datos de tu tarjeta.</p></details>
+<details><summary>¿Cómo contacto si tengo un problema?</summary><p>Escribe a <span id="faq-contacto"></span>. Respondo yo mismo.</p></details>
 </div></section>
 
-<section class="fin"><div class="w"><h2 class="px">¿Te atreves a jurar?</h2><a class="btn px" href="#pagar">Conseguir acceso · $1,21</a></div></section>
-<footer>El último Juramento · Hecho con paciencia y muchas muertes</footer>
+<section class="fin"><div class="w"><h2 class="px">¿Te atreves a jurar?</h2><a class="btn px" href="#pagar">Conseguir acceso · US$1,21</a></div></section>
+<footer>El último Juramento · Hecho con paciencia y muchas muertes<br><span class="muted">Soporte y reembolsos: <span id="f-contacto"></span></span></footer>
 
 <script src="config.js"></script>
 <script src="main.js"></script>

@@ -22,3 +22,21 @@ Si no puedes crear un link de pago, pon tu alias y un contacto en `MP` dentro de
 ## PayPal
 
 El botón alojado de PayPal se carga con `PAYPAL.clientId` y `PAYPAL.botonId` de `config.js`. Ambos datos son públicos. Si PayPal te deja definir una página de retorno, usa la de `gracias.html`.
+
+## Entrega del juego
+
+- **PayPal:** configura la página de retorno en `gracias.html`. Allí aparecen los botones de Windows y Android según `JUEGO_WINDOWS` y `JUEGO_ANDROID` en `config.js`.
+- **Transferencia de Mercado Pago:** entrega manual. Verifica el pago en tu app y manda el enlace por el contacto de `MP`.
+- El `.exe` pesa más de 100 MB y GitHub no lo admite en el repositorio. Súbelo, junto con el `.apk`, a un Release (Releases → Draft a new release → adjuntar archivos) y copia el enlace de cada uno.
+- Los botones de `gracias.html` no verifican nada: quien conozca esa dirección verá los enlaces.
+
+## Medir visitas (Cloudflare Web Analytics)
+
+No hace falta tocar el código. En el panel de Cloudflare: Workers & Pages → tu proyecto → Metrics → Web Analytics → Enable. Cloudflare añade el script solo en el siguiente despliegue (hay que volver a subir la web después de activarlo).
+
+Para ver los datos: Analytics & Logs → Web Analytics, y elige tu proyecto. Muestra visitas, páginas vistas, de dónde llegan y qué páginas abren.
+
+Cómo leerlo:
+- Visitas a `index.html` = gente que llega a la web.
+- Visitas a `gracias.html` = personas que volvieron de PayPal. Es una estimación: esa página es pública y alguien puede abrirla sin haber pagado. Para ventas reales, cuenta los pagos en PayPal y Mercado Pago.
+- No mide cuántos reproducen el tráiler ni cuántos pulsan "Conseguir acceso". Para eso haría falta una herramienta con eventos.
