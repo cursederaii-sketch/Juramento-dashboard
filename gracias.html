@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gracias por jurar · El último Juramento</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+</head><body>
+<main class="gracias"><div class="w">
+<h1 class="px" style="font-size:clamp(1.1rem,4.5vw,2.2rem);color:var(--oro)">Gracias por jurar</h1>
+<p class="lead">Tu pago se está procesando. Cuando se confirme, ya puedes entrar al reino. Descansa en la primera hoguera y suerte con el primer jefe.</p>
+<a class="btn px" id="jugar" href="#">Jugar ahora</a>
+<p class="muted" id="aviso" hidden>Todavía no hay un enlace de juego configurado.</p>
+<p><a href="index.html">Volver al inicio</a></p>
+</div></main>
+<script src="config.js"></script>
+<script>
+var b=document.getElementById("jugar");
+if(JUEGO_URL){b.href=JUEGO_URL}else{b.hidden=true;document.getElementById("aviso").hidden=false}
+</script>
+</body></html>
